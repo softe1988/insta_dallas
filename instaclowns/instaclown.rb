@@ -20,7 +20,7 @@ post '/search' do
   erb :all_photos
 end
 
-def recent_photos (hashtag = "clown", resolution = "thumbnail")
+def recent_photos (hashtag = "dallas", resolution = "thumbnail")
   @photos = []
   instagram_response = "https://api.instagram.com/v1/tags/#{hashtag}/media/recent?client_id=007b83cad0054e0982b91d676e6bca93"
 
